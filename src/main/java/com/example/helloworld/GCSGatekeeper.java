@@ -47,9 +47,8 @@ public class GCSGatekeeper {
 	     name = "sessionuris",
 	     httpMethod = ApiMethod.HttpMethod.POST
 	     )
-  public SessionUri sessionuris(@Named("file") String file) {
-    return new SessionUri(file);
+  public SessionUri sessionuris(BucketFile file) {
+      return new SessionUri(file.getBucketFile());
   }
   //[END signeduris]
-
 }
