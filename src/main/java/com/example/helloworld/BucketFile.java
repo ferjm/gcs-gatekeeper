@@ -1,13 +1,13 @@
 package com.example.helloworld;
 
 public class BucketFile {
-    private String mFile;
+    private String file;
 
     public String getBucketFile() {
-        return this.mFile;
+        return this.file;
     }
     
     public void setBucketFile(String file) {
-        this.mFile = file;
+        this.file = file;
     }
 }
